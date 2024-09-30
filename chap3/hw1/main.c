@@ -6,7 +6,6 @@ char lines[MAXLINES][MAXLINE];
 int line_lengths[MAXLINES];
 
 int main() {
-    int main() {
     char lines[MAXLINES][MAXLINE];
     int line_lengths[MAXLINES];
     int count = 0;
@@ -34,10 +33,9 @@ int main() {
     }
 
     for (int i = 0; i < count; i++) {
-        printf("%s", lines[i]);
+        printf("%s \n", lines[i]);
     }
 
     return 0;
-}
 }
 
