@@ -2,12 +2,13 @@
 #include <stdlib.h>
 #include <string.h>
 
-void print_file(FILE *fp, int line_numbers) {
+void print_file(FILE *fp, int line_numbers) 
+{
     int c;
     int line_count = 1;
 
     if (line_numbers) {
-        printf("%d: ", line_count);
+        printf("%d ", line_count);
     }
 
     while ((c = getc(fp)) != EOF) {
@@ -15,13 +16,14 @@ void print_file(FILE *fp, int line_numbers) {
         if (c == '\n') {
             line_count++;
             if (line_numbers) {
-                printf("%d: ", line_count);
+                printf("%d ", line_count);
             }
         }
     }
 }
 
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[]) 
+{
     FILE *fp;
 
     if (argc < 2) {
